@@ -48,7 +48,7 @@ body {
     display: flex;
     justify-content: space-around;
     padding: 2rem;
-    background-color: hwb(187 90% 7%);
+    background-color: #f4f4f4;;
 }
 
 .mountain {
@@ -70,7 +70,7 @@ body {
 .mountain p {
     font-size: 1rem;
     margin-bottom: 1rem;
-    color: #666;
+    color: #333;
 }
 
 .learn-more {
