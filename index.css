@@ -1,49 +1,90 @@
-/* styles.css */
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: hwb(0 98% 2%);
+    color: #333;
+    background-color: hwb(0 100% 0%);
 }
 
-header {
-    background-color: #333;
-    color: #333;
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(145deg, rgb(119, 46, 195), rgb(58, 18, 153)); /* Fixed the missing closing parenthesis */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 1rem;
+    color: #fff;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-    color: #333;
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
-.mountain-image {
-    max-width: 100%;
-    height: auto;
-}
-
-.mountain-card {
-    background-color: #333;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
+.hero-content p {
+    font-size: 1.5rem;
     margin-bottom: 2rem;
 }
 
-.mountain-title {
-    font-size: 1.5rem;
+.cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #007AFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
     font-weight: bold;
-    margin-bottom: 0.5rem;
-    text-align: center;
+    transition: background-color 0.3s;
 }
 
-.mountain-description {
+.cta-button:hover {
+    background-color: #005BBB;
+}
+
+/* Featured Mountains Section */
+.featured-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+.mountain {
+    text-align: center;
+    max-width: 300px;
+}
+
+.mountain img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.mountain h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.mountain p {
     font-size: 1rem;
-    color: #333
-    text-align center;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.learn-more {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #007AFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.learn-more:hover {
+    background-color: #005BBB;
 }
 
 /* Footer */
@@ -72,4 +113,72 @@ footer nav ul li a {
 footer p {
     margin-top: 1rem;
     font-size: 0.875rem;
+}
+
+/* Button Stars */
+button {
+  position: relative;
+  padding: 12px 35px;
+  background: var(--color);
+  font-size: 17px;
+  font-weight: 500;
+  color: #181818;
+  border: 3px solid var(--color);
+  border-radius: 8px;
+  box-shadow: 0 0 0 #fec1958c;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.star-1, .star-2, .star-3, .star-4, .star-5, .star-6 {
+  position: absolute;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: -5;
+  transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+}
+
+button:hover .star-1 {
+  top: -80%;
+  left: -30%;
+  filter: drop-shadow(0 0 10px #fffdef);
+  z-index: 2;
+}
+
+button:hover .star-2 {
+  top: -25%;
+  left: 10%;
+  filter: drop-shadow(0 0 10px #fffdef);
+  z-index: 2;
+}
+
+button:hover .star-3 {
+  top: 55%;
+  left: 25%;
+  filter: drop-shadow(0 0 10px #fffdef);
+  z-index: 2;
+}
+
+button:hover .star-4 {
+  top: 30%;
+  left: 80%;
+  filter: drop-shadow(0 0 10px #fffdef);
+  z-index: 2;
+}
+
+button:hover .star-5 {
+  top: 25%;
+  left: 115%;
+  filter: drop-shadow(0 0 10px #fffdef);
+  z-index: 2;
+}
+
+button:hover .star-6 {
+  top: 5%;
+  left: 60%;
+  filter: drop-shadow(0 0 10px #fffdef);
+  z-index: 2;
+}
+
+.fil0 {
+  fill: #FFFDEF;
 }
