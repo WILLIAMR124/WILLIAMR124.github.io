@@ -47,7 +47,7 @@ body {
 }
 
 body {
-  background: linear-gradient(145deg, rgb(119, 46, 195), rgb(58, 18, 153));
+  background: linear-gradient(145deg, rgb(39, 39, 171), rgb(58, 18, 153));
   height: 100vh;
   overflow: hidden;
 }
