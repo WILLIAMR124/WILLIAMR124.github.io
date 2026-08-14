@@ -88,6 +88,7 @@ body {
 .mountain {
     text-align: center;
     max-width: 300px;
+
 }
 
 .mountain img {
@@ -99,12 +100,13 @@ body {
 .mountain h2 {
     font-size: 1.75rem;
     margin-bottom: 0.5rem;
+
 }
 
 .mountain p {
     font-size: 1rem;
     margin-bottom: 1rem;
-    color: #333;
+    color: #ababab;
 }
 
 .learn-more {
