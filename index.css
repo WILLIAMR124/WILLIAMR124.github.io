@@ -25,7 +25,7 @@ body {
     
 }
   
-.mountain-card {
+.planet-card {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -74,10 +74,12 @@ body {
      background: linear-gradient(145deg, rgb(19, 19, 201), rgb(58, 18, 153));
 }
 
-/* Featured Mountains Section */
+/* Featured Planets Section */
 .featured-section {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
     padding: 2rem;
     background-color: #f4f4f4;
     background-color: transparent;
@@ -85,25 +87,28 @@ body {
 
 }
 
-.mountain {
+.planet {
     text-align: center;
     max-width: 300px;
 
 }
 
-.mountain img {
-    width: 100%;
+.planet img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 1rem;
     border-radius: 10px;
-    margin-bottom: 1rem;
 }
 
-.mountain h2 {
+.planet h2 {
     font-size: 1.75rem;
     margin-bottom: 0.5rem;
 
 }
 
-.mountain p {
+.planet p {
     font-size: 1rem;
     margin-bottom: 1rem;
     color: #ababab;

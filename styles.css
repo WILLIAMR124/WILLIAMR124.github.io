@@ -7,6 +7,16 @@ body {
     background-color: hwb(0 99% 0%);
 }
 
+/* Parallax Starfield Background */
+#starfield {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+}
+
 /* Hero Section */
 .hero-section {
     height: 100vh;
@@ -282,7 +292,7 @@ button:hover .star-6 {
 .fil0 {
   fill: #FFFDEF
 }
-/* Featured Mountains Section */
+/* Featured Planets Section */
 .featured-section {
     display: flex;
     justify-content: space-around;
@@ -290,27 +300,28 @@ button:hover .star-6 {
     background-color: #f4f4f4;;
 }
 
-.mountain {
+.planet {
     text-align: center;
     max-width: 300px;
 }
 
-.mountain img {
+.planet img {
     width: 100%;
     border-radius: 10px;
     margin-bottom: 1rem;
 }
 
-.mountain h2 {
+.planet h2 {
     font-size: 1.75rem;
     margin-bottom: 0.5rem;
 }
 
-.mountain p {
+.planet p {
     font-size: 1rem;
     margin-bottom: 1rem;
     color: #333;
 }
+
 
 .learn-more {
     display: inline-block;

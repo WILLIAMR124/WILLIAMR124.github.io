@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="./styles.css">
     <script src="./index.js"></script>
 </head>
-<body>
+    <body>
+    <canvas id="starfield" aria-hidden="true"></canvas>
     <!-- Header Section -->
     <header class="hero-section">
         <div class="hero-content">
-            <h1>Explore the Majestic Mountains</h1>
-            <p>Discover the beauty and grandeur of nature's greatest peaks.</p>
+            <h1>Explore the Solar System</h1>
+            <p>Discover the beauty and grandeur of our cosmic neighborhood.</p>
             
             <button id="start-exploring-btn">Start Exploring
                 <div class="star-1">
@@ -38,25 +39,25 @@
         </div>
     </header>
 
-    <!-- Featured Mountains Section -->
-    <section id="featured-mountains" class="featured-section">
-        <div class="mountain">
-            <img src="./Pictures/Mounteverst.jpeg" alt="Mountain 1">
-            <h2>Mount Everest</h2>
-            <p>The highest mountain in the world, located in the Himalayas.</p>
-            <a href="./Mountains/Mount Everst.html" class="learn-more">Learn More</a>
+    <!-- Featured Planets Section -->
+    <section id="featured-planets" class="featured-section">
+        <div class="planet">
+            <img src="./Pictures/Earth.jpg" alt="Planet 1">
+            <h2>Earth</h2>
+            <p>Our home planet, the only known place in the universe with life.</p>
+            <a href="./Planets/Earth.html" class="learn-more">Learn More</a>
         </div>
-        <div class="mountain">
-            <img src="./Pictures/K2.jpg" alt="Mountain 2">
-            <h2>K2</h2>
-            <p>The second-highest peak, known for its challenging climbs.</p>
-            <a href="Mountains/K2.html" class="learn-more">Learn More</a>
+        <div class="planet">
+            <img src="./Pictures/Mars.jpeg" alt="Planet 2">
+            <h2>Mars</h2>
+            <p>The fourth planet from the Sun, known for its red color and potential for life.</p>
+            <a href="./Planets/Mars.html" class="learn-more">Learn More</a>
         </div>
-        <div class="mountain">
-            <img src="./Pictures/Mt_Denali.jpg" alt="Mountain 3">
-            <h2>Denali</h2>
-            <p>The tallest mountain in North America, located in Alaska.</p>
-            <a href="Mountains/Denali.html" class="learn-more">Learn More</a>
+        <div class="planet">
+            <img src="./Pictures/Jupiter.png" alt="Planet 3">
+            <h2>Jupiter</h2>
+            <p>The largest planet in our solar system, a gas giant with a prominent Great Red Spot.</p>
+            <a href="./Planets/Jupiter.html" class="learn-more">Learn More</a>
         </div>
     </section>
 
@@ -70,12 +71,12 @@
                 <li><a href="./Other Pages/contact.html">Contact</a></li>
             </ul>
         </nav>
-        <p>© 2025 William Regenbogen. All rights reserved.</p>
+        <p>© 2026 William Regenbogen. All rights reserved.</p>
     </footer>
 
     <script>
         document.getElementById('start-exploring-btn').addEventListener('click', function() {
-            window.location.href = 'Mountain Redirect.html';
+            window.location.href = 'Planet Redirect.html';
         });
     </script>
 </body>

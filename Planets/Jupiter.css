@@ -6,6 +6,44 @@ body {
     color: #333;
     background: rgb(254, 254, 254);
 }
+
+.navbar {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Breadcrumb Navigation */
+.breadcrumb {
+    background-color: #444;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+.breadcrumb a {
+    color: #9db4ff;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb span {
+    color: #cfcfcf;
+}
+
 .title {
     text-align: center;
     color: #000000;
@@ -25,7 +63,7 @@ body {
 
 }
 
-.mountain-card {
+.planet-card {
     
     align-items: center;
     margin: 2rem 0;
@@ -35,7 +73,7 @@ body {
     /*box-shadow: 0 0 10px rgba(225, 224, 224, 0.1);*/
 }
 
-/* Featured Mountains Section */
+/* Featured Planets Section */
 .featured-section {
     display: flex;
     justify-content: space-around;
@@ -69,5 +107,32 @@ footer p {
     margin-top: 1rem;
     font-size: 0.875rem;
     color: grey;
+}
+
+/* Planet Hero Image */
+.planet-hero img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    display: block;
+    margin: 1rem auto;
+}
+
+/* Quick Facts List */
+.facts-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 500px;
+    text-align: left;
+}
+
+.facts-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.facts-list li:last-child {
+    border-bottom: none;
 }
 
