@@ -1,9 +1,9 @@
 /* General Styles */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Redaction';
     margin: 0;
     padding: 0;
-    color: #ffffff;
+    color: #000000;
     background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0');
     background-size: cover;
 

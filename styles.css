@@ -1,10 +1,10 @@
 /* General Styles */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Redaction 35';
     margin: 0;
     padding: 0;
-    color: #333;
-    background-color: hwb(0 100% 0%);
+    color: #fcfcfcff;
+    background-color: hwb(0 99% 0%);
 }
 
 /* Hero Section */
@@ -15,7 +15,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #fff;
+    color: #efeded;
 }
 
 .hero-content h1 {
@@ -31,8 +31,8 @@ body {
 .cta-button {
     display: inline-block;
     padding: 0.75rem 1.5rem;
-    background-color: #007AFF;
-    color: #fff;
+    background-color: #000000;
+    color: #f8f5f5;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
@@ -40,14 +40,14 @@ body {
 }
 
 .cta-button:hover {
-    background-color: #005BBB;
+    background-color: #000000;
 }
 :root {
   --glow-rgb: 239 42 201;
 }
 
 body {
-  background: linear-gradient(145deg, rgb(39, 39, 171), rgb(58, 18, 153));
+  background: linear-gradient(145deg, rgb(0, 0, 0), rgb(52, 9, 138));
   height: 100vh;
   overflow: hidden;
 }
@@ -124,8 +124,9 @@ body {
     opacity: 0;
   }
 }
+/* button background color */
 :root{
-	--color: #95f9fe;
+	--color: #010247;
 }
 * {
 	margin: 0;
@@ -138,7 +139,7 @@ button {
   background: var(--color);
   font-size: 17px;
   font-weight: 500;
-  color: #181818;
+  color: #f9f8f8;
   border: 3px solid var(--color);
   border-radius: 8px;
   box-shadow: 0 0 0 #fec1958c;
