@@ -3,13 +3,9 @@ body {
     font-family: 'Redaction';
     margin: 0;
     padding: 0;
-    color: #000000;
+    color: #faf6f6;
     height: 100vh;
     background: linear-gradient(145deg, rgb(0, 0, 0), rgb(58, 18, 153));
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     background-size: cover;
 
 }
@@ -24,7 +20,7 @@ body {
     margin: 0 auto;
     padding: 0 1rem;
     text-align: center;
-    color: #465;
+    color: rgb(58, 79, 69);
 
     
 }
@@ -125,7 +121,6 @@ body {
 
 
 
-/*
 footer {
     padding: 1rem;
     background-color: hwb(0 100% 0%);
@@ -133,6 +128,10 @@ footer {
     text-align: center;
     background-color: transparent;
     position: bottom;
+       display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 

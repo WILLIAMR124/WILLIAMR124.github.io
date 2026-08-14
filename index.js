@@ -1,3 +1,4 @@
+/*
 let start = new Date().getTime();
 
 const originPosition = { x: 0, y: 0 };
@@ -96,6 +97,7 @@ The "quantity" of points is based on the config property "maximumGlowPointSpacin
 My best explanation for why this is happening is due to the mousemove event only firing every so often. I also don't think this fix was totally necessary, but it annoyed me that it was happening so I took on the challenge of trying to fix it.
 
 -- */
+/*
 const createGlow = (last, current) => {
   const distance = calcDistance(last, current),
         quantity = determinePointQuantity(distance);
@@ -150,3 +152,4 @@ window.onmousemove = e => handleOnMove(e);
 window.ontouchmove = e => handleOnMove(e.touches[0]);
 
 document.body.onmouseleave = () => updateLastMousePosition(originPosition);
+*/
