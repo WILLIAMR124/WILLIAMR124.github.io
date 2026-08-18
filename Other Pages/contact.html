@@ -3,19 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact the author of this solar system website with questions, corrections, or suggestions.">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
     <title>Contact</title>
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
+    <nav class="navbar">
+        <a href="../Homepage.html">Home</a>
+        <a href="../planets.html">Planets</a>
+        <a href="./photos.html">Gallery</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+    </nav>
+
+    <div class="page">
+        <h1>Contact</h1>
+        <p class="lead">Found a mistake in a fact, or have an idea to make the site better? Send a message below.</p>
+
+        <form class="contact-form" action="mailto:william.regenbogen@example.com" method="post" enctype="text/plain">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
     <footer>
         <nav>
             <ul>
-                <li><a href="../index.html">Home</a></li>
+                <li><a href="../Homepage.html">Home</a></li>
+                <li><a href="../planets.html">Planets</a></li>
                 <li><a href="./photos.html">Gallery</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
-        <p>© 2026 William Regenbogen</p>
+        <p>© 2026 William Regenbogen. All rights reserved.</p>
     </footer>
 </body>
 </html>

@@ -3,9 +3,9 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 1rem;
-    background-color: #f4f4f4;
+    background-color: transparent;
     text-align: center;
-    color: #465;
+    color: #d5d5ea;
 }
 
 .stats-header {
@@ -20,12 +20,12 @@
 
 .stats-header h2 {
     margin: 0;
-    color: #000;
+    color: #fff;
 }
 
 .stats-switcher {
     font-size: 0.9rem;
-    color: #333;
+    color: #d5d5ea;
 }
 
 #planet-switcher {
@@ -58,7 +58,7 @@
 }
 
 .stat-card {
-    background: #ebebeb;
+    background: rgba(255, 255, 255, 0.06);
     border-radius: 10px;
     padding: 1rem;
     text-align: left;
@@ -69,18 +69,18 @@
     font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: #666;
+    color: #9a9ac0;
 }
 
 .stat-value {
     margin: 0 0 0.5rem;
     font-size: 1.4rem;
-    color: #000;
+    color: #fff;
 }
 
 .stat-bar {
     height: 8px;
-    background: #ddd;
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 4px;
     overflow: hidden;
 }
@@ -94,11 +94,11 @@
 .stat-note {
     margin: 0.5rem 0 0;
     font-size: 0.8rem;
-    color: #465;
+    color: #cfcfcf;
 }
 
 .atmosphere-panel {
-    background: #ebebeb;
+    background: rgba(255, 255, 255, 0.06);
     border-radius: 10px;
     padding: 1rem;
     text-align: left;
@@ -107,7 +107,7 @@
 .atmosphere-panel h3 {
     margin: 0 0 0.75rem;
     font-size: 1.05rem;
-    color: #000;
+    color: #fff;
 }
 
 .atmosphere-panel .chart-wrap canvas {
@@ -118,7 +118,7 @@
 
 .atmosphere-note {
     font-size: 0.8rem;
-    color: #465;
+    color: #cfcfcf;
     margin: 0.5rem 0 0;
 }
 
@@ -136,7 +136,7 @@
     align-items: center;
     gap: 0.4rem;
     font-size: 0.8rem;
-    color: #333;
+    color: #e0e0e0;
 }
 
 .legend .dot {
@@ -163,7 +163,7 @@
 }
 
 .chart-block {
-    background: #ebebeb;
+    background: rgba(255, 255, 255, 0.06);
     border-radius: 10px;
     padding: 1rem;
     text-align: left;
@@ -172,7 +172,7 @@
 .chart-block h3 {
     margin: 0 0 0.75rem;
     font-size: 1.05rem;
-    color: #000;
+    color: #fff;
 }
 
 .chart-wrap {

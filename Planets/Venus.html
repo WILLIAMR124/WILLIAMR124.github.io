@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Venus.css">
+    <meta name="description" content="Discover Venus: Earth's hot sister planet, its runaway greenhouse atmosphere, day and year length, and fun facts.">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./planet.css">
     <link rel="stylesheet" href="./planet-stats.css">
     <title>Venus</title>
 </head>
 <body>
     <nav class="navbar">
-        <a href="../index.html">Home</a>
-        <a href="../Planet Redirect.html">Planets</a>
+        <a href="../Homepage.html">Home</a>
+        <a href="../planets.html">Planets</a>
+        <a href="../Other Pages/photos.html">Gallery</a>
+        <a href="../Other Pages/about.html">About</a>
+        <a href="../Other Pages/contact.html">Contact</a>
     </nav>
     <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="../index.html">Home</a> &gt;
-        <a href="../Planet Redirect.html">Planets</a> &gt;
+        <a href="../Homepage.html">Home</a> &gt;
+        <a href="../planets.html">Planets</a> &gt;
         <span aria-current="page">Venus</span>
     </nav>
     <div class="title">
@@ -29,13 +34,7 @@
 
         <div class="planet-card">
             <h2 class="planet-title">Quick Facts</h2>
-            <ul class="facts-list">
-                <li><strong>Distance from the Sun:</strong> about 108.2 million km</li>
-                <li><strong>Day Length:</strong> 243 Earth days</li>
-                <li><strong>Year Length:</strong> 225 Earth days</li>
-                <li><strong>Moons:</strong> 0</li>
-                <li><strong>Temperature:</strong> about 465 °C</li>
-            </ul>
+            <ul class="facts-list" id="quick-facts"></ul>
         </div>
 
         <div class="planet-card">
@@ -54,9 +53,17 @@
      <!-- Footer -->
 <section id="planet-stats-section" class="stats-section" data-planet="Venus" aria-label="Interactive statistics"></section>
 <footer>
- <p>&copy;2026 William Regenbogen</p> 
-     <a href="./index.html" class="footer">Home</a>
-    </footer>
+    <nav>
+        <ul>
+            <li><a href="../Homepage.html">Home</a></li>
+            <li><a href="../planets.html">Planets</a></li>
+            <li><a href="../Other Pages/photos.html">Gallery</a></li>
+            <li><a href="../Other Pages/about.html">About</a></li>
+            <li><a href="../Other Pages/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <p>© 2026 William Regenbogen. All rights reserved.</p>
+</footer>
     <script src="./planet-data.js"></script>
     <script src="./planet-stats.js"></script>
 </body>

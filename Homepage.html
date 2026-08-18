@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the solar system: interactive planet statistics, fun facts, and photos of the Sun, Moon, and all eight planets.">
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <title>Solar System</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./index.js"></script>
+</head>
+    <body>
+    <canvas id="starfield" aria-hidden="true"></canvas>
+    <!-- Header Section -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <symbol id="star-icon" viewBox="0 0 784.11 815.53">
+                <path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" fill="#FFFDEF"></path>
+            </symbol>
+        </defs>
+    </svg>
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Explore the Solar System</h1>
+            <p>Discover the beauty and grandeur of our cosmic neighborhood.</p>
+
+            <button id="start-exploring-btn">Start Exploring
+                <div class="star-1"><svg viewBox="0 0 784.11 815.53" aria-hidden="true"><use href="#star-icon"></use></svg></div>
+                <div class="star-2"><svg viewBox="0 0 784.11 815.53" aria-hidden="true"><use href="#star-icon"></use></svg></div>
+                <div class="star-3"><svg viewBox="0 0 784.11 815.53" aria-hidden="true"><use href="#star-icon"></use></svg></div>
+                <div class="star-4"><svg viewBox="0 0 784.11 815.53" aria-hidden="true"><use href="#star-icon"></use></svg></div>
+                <div class="star-5"><svg viewBox="0 0 784.11 815.53" aria-hidden="true"><use href="#star-icon"></use></svg></div>
+                <div class="star-6"><svg viewBox="0 0 784.11 815.53" aria-hidden="true"><use href="#star-icon"></use></svg></div>
+            </button>
+
+        </div>
+    </header>
+    <!-- Footer -->
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="./Homepage.html">Home</a></li>
+                <li><a href="./planets.html">Planets</a></li>
+                <li><a href="./Other Pages/photos.html">Gallery</a></li>
+                <li><a href="./Other Pages/about.html">About</a></li>
+                <li><a href="./Other Pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <p>© 2026 William Regenbogen. All rights reserved.</p>
+    </footer>
+</body>
+</html>

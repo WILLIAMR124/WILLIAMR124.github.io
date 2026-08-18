@@ -3,24 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photos</title>
+    <meta name="description" content="Photo gallery of the Sun, the Moon, and all eight planets of our solar system.">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-    <div>
-        <center><img src="../Pictures/Earth.jpg" alt="Earth"></center>
-        <center><h1>Earth</h1></center>
+    <nav class="navbar">
+        <a href="../Homepage.html">Home</a>
+        <a href="../planets.html">Planets</a>
+        <a href="./photos.html">Gallery</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+    </nav>
+
+    <div class="page">
+        <h1>Gallery</h1>
+        <p class="lead">A look at every major body in our solar system. Click any image to learn more.</p>
+
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <a href="../Planets/the-sun.html"><img src="../Pictures/The Sun.jpeg" alt="The Sun, our star"></a>
+                <h3><a href="../Planets/the-sun.html">The Sun</a></h3>
+            </div>
+            <div class="gallery-item">
+                <a href="../Planets/Mercury.html"><img src="../Pictures/Mercury.jpg" alt="Mercury, the smallest planet"></a>
+                <h3><a href="../Planets/Mercury.html">Mercury</a></h3>
+            </div>
+            <div class="gallery-item">
+                <a href="../Planets/Venus.html"><img src="../Pictures/Venus.jpg" alt="Venus, Earth's hot sister planet"></a>
+                <h3><a href="../Planets/Venus.html">Venus</a></h3>
+            </div>
+            <div class="gallery-item">
+                <a href="../Planets/Earth.html"><img src="../Pictures/Earth.jpg" alt="Earth from space"></a>
+                <h3><a href="../Planets/Earth.html">Earth</a></h3>
+            </div>
+            <div class="gallery-item">
+                <a href="../Planets/the-moon.html"><img src="../Pictures/The Moon.jpg" alt="The Moon, Earth's natural satellite"></a>
+                <h3><a href="../Planets/the-moon.html">The Moon</a></h3>
+            </div>
+            <div class="gallery-item">
+                <a href="../Planets/Mars.html"><img src="../Pictures/Mars.jpeg" alt="Mars, the red planet"></a>
+                <h3><a href="../Planets/Mars.html">Mars</a></h3>
+            </div>
+            <div class="gallery-item">
+                <a href="../Planets/Jupiter.html"><img src="../Pictures/Jupiter.png" alt="Jupiter with its Great Red Spot"></a>
+                <h3><a href="../Planets/Jupiter.html">Jupiter</a></h3>
+            </div>
+            <div class="gallery-item">
+                <a href="../Planets/Saturn.html"><img src="../Pictures/Saturn.jpg" alt="Saturn and its rings"></a>
+                <h3><a href="../Planets/Saturn.html">Saturn</a></h3>
+            </div>
+            <div class="gallery-item">
+                <a href="../Planets/Uranus.html"><img src="../Pictures/Uranus.jpg" alt="Uranus, the sideways ice giant"></a>
+                <h3><a href="../Planets/Uranus.html">Uranus</a></h3>
+            </div>
+            <div class="gallery-item">
+                <a href="../Planets/Neptune.html"><img src="../Pictures/Neptune.png" alt="Neptune, the deep blue planet"></a>
+                <h3><a href="../Planets/Neptune.html">Neptune</a></h3>
+            </div>
+        </div>
     </div>
 
     <footer>
         <nav>
             <ul>
-                <li><a href="../index.html">Home</a></li>
+                <li><a href="../Homepage.html">Home</a></li>
+                <li><a href="../planets.html">Planets</a></li>
                 <li><a href="./photos.html">Gallery</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
-        <p>© 2026 William Regenbogen</p>
+        <p>© 2026 William Regenbogen. All rights reserved.</p>
     </footer>
 </body>
 </html>

@@ -4,7 +4,7 @@
     var DATA = window.PLANET_STATS;
     if (!DATA) return;
 
-    var ORDER = ['Sun', 'Mercury', 'Venus', 'Earth', 'The Moon', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'];
+    var ORDER = ['The Sun', 'Mercury', 'Venus', 'Earth', 'The Moon', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'];
     var ATMOSPHERE_COLORS = ['#4f8cff', '#e85d3f', '#e6b35a', '#d9a066', '#6fd3d3', '#b0b0b0', '#e8d3a0', '#4a6cff'];
 
     var section = document.getElementById('planet-stats-section');
@@ -13,6 +13,25 @@
     var currentKey = section.getAttribute('data-planet');
     var current = DATA[currentKey];
     if (!current) return;
+
+    var FILES = {
+        'The Sun': 'the-sun',
+        'The Moon': 'the-moon'
+    };
+    var fileFor = function (k) { return './' + (FILES[k] || k) + '.html'; };
+
+    /* ---------- quick facts (single source of truth: planet-data.js) ---------- */
+    var quickList = document.getElementById('quick-facts');
+    if (quickList && current.quickFacts) {
+        current.quickFacts.forEach(function (f) {
+            var li = document.createElement('li');
+            var strong = document.createElement('strong');
+            strong.textContent = f.label + ': ';
+            li.appendChild(strong);
+            li.appendChild(document.createTextNode(f.value));
+            quickList.appendChild(li);
+        });
+    }
 
     /* ---------- build page structure ---------- */
     var inner = document.createElement('div');
@@ -161,7 +180,7 @@
         items.forEach(function (it, i) {
             var y = padTop + i * rowH + rowH / 2;
 
-            ctx.fillStyle = '#465';
+            ctx.fillStyle = '#cfcfcf';
             ctx.textAlign = 'right';
             ctx.textBaseline = 'middle';
             ctx.fillText(it.label, labelW - 6, y);
@@ -174,7 +193,7 @@
             ctx.fillRect(labelW + 1, y - barH / 2, w, barH);
             ctx.globalAlpha = 1;
 
-            ctx.fillStyle = '#333';
+            ctx.fillStyle = '#e8e8ff';
             ctx.font = 'bold 11px "Helvetica Neue", Arial, sans-serif';
             ctx.textAlign = 'left';
             ctx.fillText(it.text, labelW + 6 + w, y);
@@ -189,7 +208,7 @@
             ctx.lineTo(bx, cssH - padBottom);
             ctx.stroke();
             ctx.setLineDash([]);
-            ctx.fillStyle = '#888';
+            ctx.fillStyle = '#b0b0c8';
             ctx.font = '9px "Helvetica Neue", Arial, sans-serif';
             ctx.textAlign = 'left';
             ctx.fillText(opts.baselineLabel || '', bx + 3, padTop + 7);
@@ -222,13 +241,13 @@
             angle += sweep;
         });
 
-        ctx.fillStyle = '#333';
+        ctx.fillStyle = '#e8e8ff';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
         ctx.font = 'bold 16px "Helvetica Neue", Arial, sans-serif';
         ctx.fillText(center.top, cx, cy - 7);
         ctx.font = '12px "Helvetica Neue", Arial, sans-serif';
-        ctx.fillStyle = '#666';
+        ctx.fillStyle = '#9a9ac0';
         ctx.fillText(center.bottom, cx, cy + 11);
 
         canvas._donut = { cx: cx, cy: cy, r: r, th: th, total: total, segments: segments };
@@ -327,7 +346,7 @@
             max: 665,
             baseline: 200,
             baselineLabel: '0 °C',
-            exclude: function (k) { return k === 'Sun'; },
+            exclude: function (k) { return k === 'The Sun'; },
             value: function (k) { return DATA[k].temperature + 200; },
             text: function (k) { return DATA[k].temperature + ' °C'; }
         }
@@ -357,7 +376,7 @@
                 value: def.value(k),
                 text: def.text(k),
                 color: DATA[k].color,
-                href: './' + k + '.html',
+                href: fileFor(k),
                 current: k === currentKey
             });
         });
